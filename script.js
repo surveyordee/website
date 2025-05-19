@@ -17,6 +17,9 @@ return response.json();
 })
 .then(data => {
 forecastData = JSON.stringify(data, null, 2);
+for (const element of forecastData) {
+    alert(element);
+}
 outputElement.textContent = JSON.stringify(data, null, 2);
 return forecastData;
 })
