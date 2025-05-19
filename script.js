@@ -1,6 +1,6 @@
 //curl "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m" 
 
-function getWeatherForcast(){
+function getWeatherForecast(){
 alert("testing");
 //const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=[51.898, 53.2724, 53.3331]&longitude=[-8.4706, -9.051, -6.2489]&daily=temperature_2m,wind_speed_10m&forecast_days=1";
 
@@ -24,8 +24,8 @@ console.error('Error:', error);
 }
 
 function checkWeather(){
-    var getWeatherForcast = getWeatherForcast()
-    for (const element of getWeatherForcast) {
+    var getForecast = getWeatherForecast()
+    for (const element of getForecast) {
         alert(element)
     }
 }
