@@ -27,7 +27,5 @@ console.error('Error:', error);
 
 function checkWeather(){
     var getForecast = getWeatherForecast()
-    for (const element of getForecast) {
-        alert(element)
-    }
+    alert(getForecast)
 }
