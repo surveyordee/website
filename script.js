@@ -16,7 +16,7 @@ throw new Error('Network response was not ok');
 return response.json();
 })
 .then(data => {
-forecastData =  = JSON.stringify(data, null, 2);
+forecastData = JSON.stringify(data, null, 2);
 outputElement.textContent = JSON.stringify(data, null, 2);
 return forecastData;
 })
