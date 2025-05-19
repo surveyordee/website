@@ -26,7 +26,10 @@ console.error('Error:', error);
 }
 
 function checkWeather(){
-    var getForecast = getWeatherForecast().then(
-        alert("did the call");
-    );
+    var getForecast = getWeatherForecast().then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    alert(response);
+    });
 }
