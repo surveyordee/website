@@ -17,7 +17,7 @@ return response.json();
 })
 .then(data => {
 forecastData = JSON.stringify(data, null, 2);
-for (const element of forecastData) {
+for (const element of data) {
     alert(element);
 }
 outputElement.textContent = JSON.stringify(data, null, 2);
@@ -29,6 +29,5 @@ console.error('Error:', error);
 }
 
 function checkWeather(){
-    var getForecast = getWeatherForecast()
-    alert(getForecast)
+    var getForecast = getWeatherForecast();
 }
