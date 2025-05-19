@@ -26,4 +26,4 @@ galwayWeatherElement.textContent = "Temperature is " + data[2].daily.temperature
 .catch(error => {
 console.error('Error:', error);
 });
-}
+});
