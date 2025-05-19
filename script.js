@@ -23,7 +23,7 @@ console.error('Error:', error);
 });
 }
 
-function getWeather(){
+function checkWeather(){
     var getWeatherForcast = getWeatherForcast()
     for (const element of getWeatherForcast) {
         alert(element)
