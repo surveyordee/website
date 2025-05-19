@@ -19,7 +19,7 @@ return response.json();
 })
 .then(data => {
 forecastData = JSON.stringify(data, null, 2);
-dublinWeatherElement.textContent = data[0].daily.temperature_2m_min[0] 
+dublinWeatherElement.textContent = "Temperature is " + data[0].daily.temperature_2m_min[0] 
 corkWeatherElement.textContent= data[1].daily.temperature_2m_min[0]
 galwayWeatherElement.textContent = data[2].daily.temperature_2m_min[0]
 for (const element of data) {
