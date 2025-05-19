@@ -26,7 +26,7 @@ console.error('Error:', error);
 }
 
 function checkWeather(){
-    var getForecast = getWeatherForecast().then(response => {
+    getWeatherForecast().then(response => {
     if (!response.ok) {
         throw new Error('Network response was not ok');
     }
