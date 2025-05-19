@@ -13,7 +13,6 @@ fetch(apiUrl)
 if (!response.ok) {
 throw new Error('Network response was not ok');
 }
-alert response.json();
 return response.json();
 })
 .then(data => {
