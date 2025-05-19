@@ -27,9 +27,9 @@ console.error('Error:', error);
 
 function checkWeather(){
     getWeatherForecast().then(response => {
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
+    //if (!response.ok) {
+    //    throw new Error('Network response was not ok');
+    //}
     alert(response);
     });
 }
