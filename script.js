@@ -22,8 +22,8 @@ forecastData = JSON.stringify(data, null, 2);
 dublinWeatherElement.textContent = "Temperature is " + data[0].daily.temperature_2m_min[0] +  "C Windspeed is " + data[0].daily.wind_gusts_10m_max[0] + " km\\h"
 corkWeatherElement.textContent= "Temperature is " + data[1].daily.temperature_2m_min[0] +  "C Windspeed is " + data[1].daily.wind_gusts_10m_max[0] + " km\\h"
 galwayWeatherElement.textContent = "Temperature is " + data[2].daily.temperature_2m_min[0] +  "C Windspeed is " + data[2].daily.wind_gusts_10m_max[0] + " km\\h"
-
+})
 .catch(error => {
 console.error('Error:', error);
 });
-});
+}
