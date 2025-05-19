@@ -18,7 +18,8 @@ return response.json();
 .then(data => {
 forecastData = JSON.stringify(data, null, 2);
 for (const element of data) {
-    alert(element);
+    alert(element.daily.temperature_2m_min[0]);
+    alert(element.daily.wind_gusts_10m_max[0]);
 }
 outputElement.textContent = JSON.stringify(data, null, 2);
 return forecastData;
