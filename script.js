@@ -1,4 +1,4 @@
-function async getWeatherForecast(){
+async function getWeatherForecast(){
 
 const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=51.898,53.2724,53.3331&longitude=-8.4706,-9.051,-6.2489&daily=temperature_2m_min,wind_gusts_10m_max&forecast_days=1";
 const outputElement = document.getElementById('output');
