@@ -26,8 +26,8 @@ for (const element of data) {
     alert(element.daily.temperature_2m_min[0]);
     alert(element.daily.wind_gusts_10m_max[0]);
 }
-outputElement.textContent = JSON.stringify(data, null, 2);
-return forecastData;
+//outputElement.textContent = JSON.stringify(data, null, 2);
+//return forecastData;
 })
 .catch(error => {
 console.error('Error:', error);
