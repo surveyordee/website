@@ -4,7 +4,8 @@ function checkWeather(){
 alert("testing");
 
 
-const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m";
+const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=temperature_2m,wind_speed_10m&forecast_days=1";
+
 const outputElement = document.getElementById('output');
 
 fetch(apiUrl)
