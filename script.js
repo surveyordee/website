@@ -31,5 +31,5 @@ function checkWeather(){
     //    throw new Error('Network response was not ok');
     //}
     alert(response);
-    });
+    }).then(ans => alert(ans));
 }
