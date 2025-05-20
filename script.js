@@ -1,6 +1,6 @@
 function checkWeather(){
 
-const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=51.898,53.2724,53.3331&longitude=-8.4706,-9.051,-6.2489&daily=temperature_2m_min,wind_gusts_10m_max&forecast_days=1";
+const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=51.898,53.2724,53.3331&longitude=-8.4706,-9.051,-6.2489&daily=temperature_2m_min,wind_gusts_10m_max,precipitation&forecast_days=1";
 const outputElement = document.getElementById('output');
 
 const dublinWeatherElement = document.getElementById('DublinWeather');
@@ -19,9 +19,9 @@ return response.json();
 })
 .then(data => {
 forecastData = JSON.stringify(data, null, 2);
-dublinWeatherElement.textContent = "Temperature is " + data[0].daily.temperature_2m_min[0] +  "C Windspeed is " + data[0].daily.wind_gusts_10m_max[0] + " km\\h"
-corkWeatherElement.textContent= "Temperature is " + data[1].daily.temperature_2m_min[0] +  "C Windspeed is " + data[1].daily.wind_gusts_10m_max[0] + " km\\h"
-galwayWeatherElement.textContent = "Temperature is " + data[2].daily.temperature_2m_min[0] +  "C Windspeed is " + data[2].daily.wind_gusts_10m_max[0] + " km\\h"
+dublinWeatherElement.textContent = "Temperature is " + data[0].daily.temperature_2m_min[0] +  "C Windspeed is " + data[0].daily.wind_gusts_10m_max[0] + " km\\h " + data[0].daily.precipitation
+corkWeatherElement.textContent= "Temperature is " + data[1].daily.temperature_2m_min[0] +  "C Windspeed is " + data[1].daily.wind_gusts_10m_max[0] + " km\\h " + data[0].daily.precipitation
+galwayWeatherElement.textContent = "Temperature is " + data[2].daily.temperature_2m_min[0] +  "C Windspeed is " + data[2].daily.wind_gusts_10m_max[0] + " km\\h " + data[0].daily.precipitation
 })
 .catch(error => {
 console.error('Error:', error);
