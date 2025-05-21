@@ -2,7 +2,7 @@
 body{ 
   font-family: 'Montserrat', sans-serif;
 }
-.surveyor {
+.surveyor {    /*setting size of surveyor image*/
   width: 200px;
   height: 200px;
 }
