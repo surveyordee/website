@@ -6,3 +6,7 @@ body{
   width: 200px;
   height: 200px;
 }
+.divBlue {
+  border: 5px outset red;
+  background-color: lightblue;
+}
