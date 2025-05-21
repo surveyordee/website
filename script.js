@@ -20,8 +20,8 @@ return response.json();
 .then(data => {
 forecastData = JSON.stringify(data, null, 2);
 dublinWeatherElement.innerHTML = "<ul class='list-group'><li class='list-group-item'>Temperature is " + data[0].daily.temperature_2m_min[0] + "C</li>" +"<li class='list-group-item'> Max gust windspeed is " + data[0].daily.wind_gusts_10m_max[0] + " km\\h</li>"+ "<li class='list-group-item'>Chance of rain " + data[0].daily.precipitation_probability_min + " %</li></ul>"
-corkWeatherElement.innerHTML = "<ul><li>Temperature is " + data[1].daily.temperature_2m_min[0] +  "C</li>" +"<li> Max gust windspeed is " + data[1].daily.wind_gusts_10m_max[0] + " km\\h</li>"+ "<li>Chance of rain " + data[1].daily.precipitation_probability_min + " %</li></ul>"
-galwayWeatherElement.innerHTML = "<ul><li>Temperature is " + data[2].daily.temperature_2m_min[0] +  "C</li>" +"<li> Max gust windspeed is " + data[2].daily.wind_gusts_10m_max[0] + " km\\h</li>"+ "<li>Chance of rain " + data[2].daily.precipitation_probability_min + " %</li></ul>"
+corkWeatherElement.innerHTML = "<ul class='list-group'><li class='list-group-item'>Temperature is " + data[1].daily.temperature_2m_min[0] +  "C</li>" +"<li class='list-group-item'> Max gust windspeed is " + data[1].daily.wind_gusts_10m_max[0] + " km\\h</li>"+ "<li class='list-group-item'>Chance of rain " + data[1].daily.precipitation_probability_min + " %</li></ul>"
+galwayWeatherElement.innerHTML = "<ul class='list-group'><li class='list-group-item'>Temperature is " + data[2].daily.temperature_2m_min[0] +  "C</li>" +"<li class='list-group-item'> Max gust windspeed is " + data[2].daily.wind_gusts_10m_max[0] + " km\\h</li>"+ "<li class='list-group-item'>Chance of rain " + data[2].daily.precipitation_probability_min + " %</li></ul>"
 })
 .catch(error => {
 console.error('Error:', error);
