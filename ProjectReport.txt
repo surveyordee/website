@@ -1,1 +1,3 @@
+Initial plan was to have an opening page with a list of locations and weather for these locations.
+Second page would have a list of things that should be brought for surveying in the weather, personal equipment().
 
