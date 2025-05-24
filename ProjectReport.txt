@@ -1,3 +1,11 @@
 Initial plan was to have an opening page with a list of locations and weather for these locations.
-Second page would have a list of things that should be brought for surveying in the weather, personal equipment().
+Second page would have a list of things that should be brought for surveying in the weather, personal equipment.
 
+Weather was taken from https://open-meteo.com/en/docs The page was useful in getting options for weather, locations and forecast slots. The API Response section was useful to generate the code necessary to retrieve the data.
+
+Surveyor icon was found on the internet. Use was free once the source was attributed. To keep the look and feel of the page the link was behind a button.
+
+Experimented with bootstrap Carousel, was proving difficult to get working and when reviewing the docs, bootstrap highlighted carousels are generally not compliant with accessibility standards. Cards were preferred as a method of displaying items. 
+
+Getting the code onto the website was a matter of following the instructions. The inital delay until the site was available the first time caused some confusion. 
+Editing code using github is a little slow and there is no syntax highlighting. Waiting for a commit to arrive on the website can slow momentum, and if something doesn't work, you need to check the code did update, and the page refreshed before making more edits.
