@@ -6,11 +6,11 @@ body{
   width: 200px;
   height: 200px;
 }
-.divRed {      /*traditional construction colours
+.divRed {      /*traditional construction colours*/
   border: 5px outset yellow;
   background-color: red;
 }
-.divYellow {    / Traditional construction colour
+.divYellow {    /*Traditional construction colour*/
   border: 5px outset red;
   background-color: yellow;
 }
